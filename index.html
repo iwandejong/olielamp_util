@@ -60,6 +60,14 @@
             background-color: #2c4c97;
         }
 
+        .button-3.alt-2:hover {
+            background-color: #972c2c;
+        }
+
+        .button-3.alt-2 {
+            background-color: #b32a2a;
+        }
+
         .button-3:focus:not(:focus-visible):not(.focus-visible) {
             box-shadow: none;
             outline: none;
@@ -97,8 +105,9 @@
     <div class="header">
         <h2>Olielamp Utility</h2>
         <div>
-            <button class="button-3" role="button" onclick="generateUrls()">Generate URLs</button>
+            <button class="button-3" role="button" onclick="generateUrls()">Generate</button>
             <button id="copyBtn" class="button-3 alt" role="button" onclick="copyToClipboard()">Copy Generated Text</button>
+            <button id="copyBtn" class="button-3 alt-2" role="button" onclick="copyToClipboard()">Reset</button>
         </div>
     </div>
     <textarea id="articleWriter" class="smallInput" placeholder="Article Writer"></textarea>
